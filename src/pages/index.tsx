@@ -7,7 +7,7 @@ import { trpc } from "../utils/trpc";
 const Home: NextPage = () => (
   <>
     <Head>
-      <title>Leaderboard</title>
+      <title>Top Three</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <main className="flex min-h-screen flex-col items-center justify-center bg-slate-800 text-slate-200">
@@ -74,9 +74,7 @@ const Card = ({ name, score, rank }: CardProps) => (
         ranks[rank].height
       }
     >
-      <h3 className="text-2xl font-semibold sm:text-4xl">
-        {name?.toUpperCase()}
-      </h3>
+      <h3 className="text-2xl font-semibold uppercase sm:text-4xl">{name}</h3>
       <p className="text-xl font-semibold">{score}</p>
     </div>
   </div>
