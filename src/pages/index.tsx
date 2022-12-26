@@ -7,12 +7,20 @@ import { trpc } from "../utils/trpc";
 const Home: NextPage = () => (
   <>
     <Head>
-      <title>Top Three</title>
+      <title>ADME Circuit Ranking</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <main className="flex min-h-screen flex-col items-center justify-center bg-slate-800 text-slate-200">
+    <main
+      className="flex min-h-screen flex-col items-center justify-center text-slate-200"
+      style={{
+        background:
+          "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/background.png')",
+      }}
+    >
       <div className="container flex max-w-5xl flex-col items-center justify-center gap-12 px-4 py-16">
-        <h1 className="text-6xl font-bold sm:text-[6rem]">Top Three</h1>
+        <h1 className="text-4xl font-bold sm:text-[4rem]">
+          ADME Circuit Ranking
+        </h1>
         <Podium />
         <Link
           href="/leaderboard"

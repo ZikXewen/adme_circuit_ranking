@@ -14,7 +14,13 @@ const Leaderboard: NextPage<Props> = (props) => (
       <title>Leaderboard</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <main className="flex min-h-screen flex-col items-center justify-center bg-slate-800 text-slate-200">
+    <main
+      className="flex min-h-screen flex-col items-center justify-center text-slate-200"
+      style={{
+        background:
+          "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/background.png')",
+      }}
+    >
       <div className="container flex max-w-5xl flex-col items-center justify-center gap-12 px-4 py-16">
         <h1 className="text-6xl font-bold sm:text-[6rem]">Leaderboard</h1>
         <Table {...props} />
